@@ -47,14 +47,14 @@ monitors:
   - id: cloud-api
     name: Cloud API
     description: 'cloud API Access.'
-    url: 'https://api.onehostcloud.hosting/'
+    url: 'https://host10.onehostcloud.hosting/'
     method: GET
     expectStatus: 200
     
   - id: tor-hosting
     name: cPanel Tor Hosting
     description: 'cPanel Shared Hosting Servers.'
-    url: 'https://cpanel-tor.onehostcloud.hosting/'
+    url: 'https://host10.onehostcloud.hosting'
     method: GET
     expectStatus: 200
     
