@@ -37,29 +37,30 @@ monitors:
     method: GET
     expectStatus: 200
 
-- id: shared-hosting
+  - id: shared-hosting
     name: Shared Hosting Cluster
     description: 'cPanel Shared Hosting Cluster.'
     url: 'https://host10.onehostcloud.hosting/'
     method: GET
     expectStatus: 200
     
-- id: cloud-api
+  - id: cloud-api
     name: Cloud API
     description: 'cloud API Access.'
     url: 'https://api.onehostcloud.hosting/'
     method: GET
     expectStatus: 200
     
-- id: tor-hosting
+  - id: tor-hosting
     name: cPanel Tor Hosting
     description: 'cPanel Shared Hosting Servers.'
     url: 'https://cpanel-tor.onehostcloud.hosting/'
     method: GET
     expectStatus: 200
     
-- id: vsphere-cloud
+  - id: vsphere-cloud
     name: VMware vSphere
+    description: 'Global vSphere Clusters.'
     url: 'https://onehostcloud.hosting/'
     method: GET
     expectStatus: 200
