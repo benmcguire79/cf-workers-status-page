@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.onehostcloud.hosting' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -16,8 +16,8 @@ settings:
 
 monitors:
   - id: onehost-web # unique identifier
-    name: onehostcloud.hosting
-    description: 'You write code. They handle the rest.' # default=empty
+    name: OneHost Website
+    description: 'Main OneHost Website.' # default=empty
     url: 'https://onehostcloud.hosting/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -25,13 +25,41 @@ monitors:
 
   - id: cloud-onehostcloud
     name: cloud.onehostcloud.hosting
-    description: 'Built for anything connected to the Internet.'
+    description: 'Cloud Instances Dashboard.'
     url: 'https://cloud.onehostcloud.hosting'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: client-area
+    name: Client Area/Billing
+    description: 'Client Area & Billing System.'
+    url: 'https://clients.onehostcloud.hosting/'
+    method: GET
+    expectStatus: 200
+
+- id: shared-hosting
+    name: Shared Hosting Cluster
+    description: 'cPanel Shared Hosting Cluster.'
+    url: 'https://host10.onehostcloud.hosting/'
+    method: GET
+    expectStatus: 200
+    
+- id: cloud-api
+    name: Cloud API
+    description: 'cloud API Access.'
+    url: 'https://api.onehostcloud.hosting/'
+    method: GET
+    expectStatus: 200
+    
+- id: tor-hosting
+    name: cPanel Tor Hosting
+    description: 'cPanel Shared Hosting Servers.'
+    url: 'https://cpanel-tor.onehostcloud.hosting/'
+    method: GET
+    expectStatus: 200
+    
+- id: vsphere-cloud
+    name: VMware vSphere
+    url: 'https://onehostcloud.hosting/'
     method: GET
     expectStatus: 200
