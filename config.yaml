@@ -47,7 +47,7 @@ monitors:
   - id: cloud-api
     name: Cloud API
     description: 'cloud API Access.'
-    url: 'https://host10.onehostcloud.hosting:2083/'
+    url: 'https://host10.myonehostcloud.com:2083/'
     method: GET
     expectStatus: 200
     
