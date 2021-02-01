@@ -24,7 +24,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: cloud-onehostcloud
-    name: cloud.onehostcloud.hosting
+    name: Cloud Dashboard ( Global )
     description: 'Cloud Instances Dashboard.'
     url: 'https://cloud.onehostcloud.hosting'
     method: GET
