@@ -33,14 +33,14 @@ monitors:
   - id: client-area
     name: Client Area/Billing
     description: 'Client Area & Billing System.'
-    url: 'https://clients.onehostcloud.hosting/'
+    url: 'https://clients.onehostcloud.hosting/index.php?rp=/login/'
     method: GET
     expectStatus: 200
 
   - id: shared-hosting
     name: Shared Hosting Cluster
     description: 'cPanel Shared Hosting Cluster.'
-    url: 'https://host10.onehostcloud.hosting/'
+    url: 'https://host10.myonehostcloud.com:2083/'
     method: GET
     expectStatus: 200
     
@@ -54,7 +54,7 @@ monitors:
   - id: tor-hosting
     name: cPanel Tor Hosting
     description: 'cPanel Shared Hosting Servers.'
-    url: 'https://host10.onehostcloud.hosting'
+    url: 'https://cpanel-tor.myonehostcloud.com:2083/'
     method: GET
     expectStatus: 200
     
